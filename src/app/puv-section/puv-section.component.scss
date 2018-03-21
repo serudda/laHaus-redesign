@@ -1,0 +1,127 @@
+/**********************************************************/
+/*                          HERO                          */
+/**********************************************************/
+
+@import '~theme/core/global';
+
+.ma-hero {
+    min-height: 633px;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    // background-color: map-get($color, slate);
+    background-color: #4285f4 !important;
+    background: -webkit-radial-gradient(farthest-corner at 20px 20px, #a1d2dd 0%, #004aa6) !important;
+    background: -moz-radial-gradient(farthest-corner at 20px 20px, #a1d2dd 0%, #004aa6) !important;
+    background: radial-gradient(farthest-corner at 20px 20px, #004aa6 0%, #a1d2dd) !important;
+    overflow: hidden !important;
+    background-size: 100% 100%;
+
+    .poster {
+        height: 91vh;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+
+        &--mobile {
+            // background: linear-gradient(rgba(18,18,18,0.6), rgba(18,18,18,0.5)), url(../../../../assets/images/hero-image.jpg);
+            background-size: cover;
+        }
+
+        &--teacher {
+            //background: linear-gradient(rgba(18,18,18,0.6), rgba(18,18,18,0.5)), url(../../../../assets/images/hero-teacher.jpg);
+            //background-size: cover;
+            background-color: #4285f4 !important;
+            background: -webkit-radial-gradient(farthest-corner at 20px 20px, #a1d2dd 0%, #004aa6) !important;
+            background: -moz-radial-gradient(farthest-corner at 20px 20px, #a1d2dd 0%, #004aa6) !important;
+            background: radial-gradient(farthest-corner at 20px 20px, #004aa6 0%, #a1d2dd) !important;
+            overflow: hidden !important;
+        }
+
+        &--main {
+            opacity: 1;
+            background: linear-gradient(rgba(18,18,18,0.3), rgba(18,18,18,0.3)), url('../../assets/images/hero7.JPG');
+            background-size: cover;
+        }
+
+        &--gradient {
+            background-color: #78c878 !important;
+            background: -webkit-radial-gradient(farthest-corner at 20px 20px, #b0dda1 0%, #00a699) !important;
+            background: -moz-radial-gradient(farthest-corner at 20px 20px, #b0dda1 0%, #00a699) !important;
+            background: radial-gradient(farthest-corner at 20px 20px, #00a699 0%, #b0dda1) !important;
+            overflow: hidden !important;
+        }
+
+        //TODO: Guardo esto aqui por no tengo donde mas: es el degradado que tiene airbnb en
+        // su sección final. Este tiene el degradado circular.
+        // referencia: https://www.airbnb.com/work?s=footer
+        .gradient-test {
+            background-color: #78c878 !important;
+            background: -webkit-radial-gradient(farthest-corner at 48% 10%, #8ce071 0%, #00a699) !important;
+            background: -moz-radial-gradient(farthest-corner at 48% 10%, #8ce071 0%, #00a699) !important;
+            background: radial-gradient(farthest-corner at 48% 10%, #8ce071 0%, #00a699) !important;
+        }
+
+    }
+
+    .video-hero {
+        opacity: 0.1;
+        visibility: visible;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: 730px;
+    }
+
+    &__wrapper {
+        width: 800px;
+        height: 500px;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -400px;
+        margin-top: -250px;
+
+        &__title {
+            font-size: 43px;
+            font-weight: 600;
+            margin-top: 50px;
+        }
+
+        &__description {
+            font-size: 22px;
+            line-height: 30px;
+            color: #fff;
+            margin: auto;
+            max-width: 660px;
+            font-weight: 300;
+            margin-top: 27px;
+        }
+
+        &__btn-container {
+            margin-bottom: 40px;
+            margin-top: 60px;
+        }
+
+        &__go-down {
+
+            .material-icons {
+                opacity: 0.7;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

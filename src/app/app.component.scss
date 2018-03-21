@@ -1,0 +1,17 @@
+@import 'functions', 'variables', 'mixins';
+@import '~theme/core/global';
+
+
+// Medium devices (tablets, less than 992px)
+@include media-breakpoint-down(md) {
+    .App {
+        color: map-get($color, darkPrimary);
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@include media-breakpoint-down(xs) { 
+    .App {
+        color: map-get($color, darkSecondary);
+    }
+}

@@ -1,0 +1,13 @@
+/**********************************************************/
+/*                         HEADER                         */
+/**********************************************************/
+
+@import '~theme/core/global';
+
+.app-header {
+    z-index: 1;
+    color: rgba(255,255,255,0.75);
+    background-color: map-get($color, white);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+}
