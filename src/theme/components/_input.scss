@@ -81,15 +81,15 @@
     }
 
     &::-moz-placeholder {
-        color: map-get($color, extraDarkSmoke);
+        color: map-get($color, silver);
     }
 
     &::-webkit-input-placeholder {
-        color: map-get($color, extraDarkSmoke);
+        color: map-get($color, silver);
     }
 
     &::placeholder {
-        color: map-get($color, extraDarkSmoke);
+        color: map-get($color, silver);
     }
 
     &:focus {
@@ -110,9 +110,9 @@
     }
 
     &--lg {
-        padding: 0 13px;
-        height: 45px;
-        font-size: 16px;
+        padding: 0 10px;
+        height: 25px;
+        font-size: 20px;
     }
 
     &--block {
@@ -236,7 +236,7 @@
         &--lg {
             padding: 0 35px 0 16px;
             height: 50px;
-            font-size: 16px;
+            font-size: 20px;
         }
     
         &--block {
@@ -246,6 +246,7 @@
     }
 
     .icon {
+        color: map-get($color, secondary);
         position: absolute;
         /* TODO: Este margin top esta quemado para los select md 
         deberia variar dependiendo el tamaño */

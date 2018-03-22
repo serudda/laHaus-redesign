@@ -12,6 +12,7 @@ import { CompareSectionComponent } from './compare-section/compare-section.compo
 import { ReviewSectionComponent } from './review-section/review-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { QuestionSectionComponent } from './question-section/question-section.component';
+import { RentCalcutatorComponent } from './rent-calcutator/rent-calcutator.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { QuestionSectionComponent } from './question-section/question-section.co
     CompareSectionComponent,
     ReviewSectionComponent,
     ContactSectionComponent,
-    QuestionSectionComponent
+    QuestionSectionComponent,
+    RentCalcutatorComponent
   ],
   imports: [
     BrowserModule,

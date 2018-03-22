@@ -7,7 +7,8 @@ import {
   IconHome,
   IconUsers,
   IconArrowRight,
-  IconChevronDown
+  IconChevronDown,
+  IconAlertTriangle
 } from 'angular-feather';
 
 const icons = [
@@ -17,7 +18,8 @@ const icons = [
   IconHome,
   IconUsers,
   IconArrowRight,
-  IconChevronDown
+  IconChevronDown,
+  IconAlertTriangle
 ];
 
 @NgModule({
