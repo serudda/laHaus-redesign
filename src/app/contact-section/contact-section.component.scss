@@ -1,0 +1,28 @@
+.app-contact-section {
+    position: relative;
+
+    .square {
+        width: 70px;
+        height: 70px;
+        top: 60px;
+        right: 230px;
+        background-image: url('./../../assets/images/blue_square.png');
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        animation-iteration-count: infinite;
+        animation-name: spin;
+        animation-duration: 40s;
+        animation-timing-function: linear;
+    }
+    
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg)
+    }
+    to {
+        transform:rotate(360deg)
+    }
+}

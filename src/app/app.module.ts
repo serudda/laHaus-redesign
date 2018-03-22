@@ -10,6 +10,7 @@ import { ExtraExpensesCalculatorComponent } from './extra-expenses-calculator/ex
 import { HowItWorkSectionComponent } from './how-it-work-section/how-it-work-section.component';
 import { CompareSectionComponent } from './compare-section/compare-section.component';
 import { ReviewSectionComponent } from './review-section/review-section.component';
+import { ContactSectionComponent } from './contact-section/contact-section.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ReviewSectionComponent } from './review-section/review-section.componen
     ExtraExpensesCalculatorComponent,
     HowItWorkSectionComponent,
     CompareSectionComponent,
-    ReviewSectionComponent
+    ReviewSectionComponent,
+    ContactSectionComponent
   ],
   imports: [
     BrowserModule,

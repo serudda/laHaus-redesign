@@ -34,15 +34,15 @@
     }
 
     &::-moz-placeholder {
-        color: map-get($color, extraDarkSmoke);
+        color: map-get($color, silver);
     }
 
     &::-webkit-input-placeholder {
-        color: map-get($color, extraDarkSmoke);
+        color: map-get($color, silver);
     }
 
     &::placeholder {
-        color: map-get($color, extraDarkSmoke);
+        color: map-get($color, silver);
     }
 
     &:focus {
@@ -59,7 +59,7 @@
     &--md {
         padding: 0 14px;
         height: 40px;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     &--lg {
