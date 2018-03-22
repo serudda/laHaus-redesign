@@ -11,6 +11,7 @@ import { HowItWorkSectionComponent } from './how-it-work-section/how-it-work-sec
 import { CompareSectionComponent } from './compare-section/compare-section.component';
 import { ReviewSectionComponent } from './review-section/review-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { QuestionSectionComponent } from './question-section/question-section.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
     HowItWorkSectionComponent,
     CompareSectionComponent,
     ReviewSectionComponent,
-    ContactSectionComponent
+    ContactSectionComponent,
+    QuestionSectionComponent
   ],
   imports: [
     BrowserModule,

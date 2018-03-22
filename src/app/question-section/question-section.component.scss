@@ -1,0 +1,33 @@
+@import '~theme/core/global';
+
+.app-question-section {
+    
+    .title {
+        padding-left: 20px;
+    }
+
+    .question-container {
+        padding: 20px;
+        border-bottom: 1px solid map-get($color, extraDarkSmoke);
+
+        .question {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: map-get($color, secondary);
+            }
+
+            .icon {
+                color: map-get($color, secondary);
+            }
+        }
+
+        .answer {
+
+        }
+    }
+}
