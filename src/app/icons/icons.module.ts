@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IconHelpCircle, IconX, IconCheck, IconHome, IconUsers } from 'angular-feather';
+import { IconHelpCircle, IconX, IconCheck, IconHome, IconUsers, IconArrowRight } from 'angular-feather';
 
 const icons = [
-  IconHelpCircle, IconX, IconCheck, IconHome, IconUsers
+  IconHelpCircle, IconX, IconCheck, IconHome, IconUsers, IconArrowRight
 ];
 
 @NgModule({
