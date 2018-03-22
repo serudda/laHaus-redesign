@@ -1,4 +1,4 @@
-<section class="app-question-section p-5 color-slate mb-4">
+<section class="app-question-section p-5 color-slate mb-5">
   
   <! Title >
   <div class="row mb-5 pl-4 mt-4">
@@ -15,13 +15,14 @@
     <div class="col-6">
       <h2 class="title fontSize-lg fontWeight-7">ACERCA DE LA HAUS</h2>
       <div class="question-container">
-        <div class="question">
+        <div class="question" (click)="select('1');">
           <i-chevron-down class="icon"></i-chevron-down>
           <span class="ml-2 color-secondary fontSize-xxl">
             Como gana La Haus?
           </span>
         </div>
-        <div class="answer color-silver fontSize-lg">
+        <div class="answer color-silver fontSize-xl"
+             [ngClass]="{active: isActive('1')}">
           La Haus nunca le cobrará dinero al comprador de la vivienda. 
           La Haus recibe una comisión previamente acordada con el vender 
           de la vivienda, sin hacer que esta, haga que el precio de la 
@@ -29,13 +30,14 @@
         </div>
       </div>
       <div class="question-container">
-        <div class="question">
+        <div class="question" (click)="select('2');">
           <i-chevron-down class="icon"></i-chevron-down>
           <span class="ml-2 color-secondary fontSize-xxl">
             Por que La Haus?
           </span>
         </div>
-        <div class="answer color-silver fontSize-lg">
+        <div class="answer color-silver fontSize-xl"
+             [ngClass]="{active: isActive('2')}">
           Por que resolvemos la mayor cantidad de problemas que encontramos 
           a la hora de comprar vivienda. Comprar casa no es un proceso facil y rapido
           para todas las personas, y es ahi donde muchos asesores o inmobiliarias 
@@ -43,13 +45,14 @@
         </div>
       </div>
       <div class="question-container">
-        <div class="question">
+        <div class="question" (click)="select('3');">
           <i-chevron-down class="icon"></i-chevron-down>
           <span class="ml-2 color-secondary fontSize-xxl">
             Ustedes son una inmobiliaria?
           </span>
         </div>
-        <div class="answer color-silver fontSize-lg">
+        <div class="answer color-silver fontSize-xl"
+             [ngClass]="{active: isActive('3')}">
           Somo la evolución de una inmobiliaria, gastamos mucho tiempo escogiendo a los mejores
           consultores inmobiliarios, además de tener en nuestro equipo de trabajo a los mejores
           ingenieros de software del pais, asi logramos una mezcla perfecta entre: la experiencia
@@ -61,25 +64,27 @@
     <div class="col-6">
       <h2 class="title fontSize-lg fontWeight-7">EMPEZAR</h2>
       <div class="question-container">
-          <div class="question">
+          <div class="question" (click)="select('4');">
             <i-chevron-down class="icon"></i-chevron-down>
             <span class="ml-2 color-secondary fontSize-xxl">
               Si quisiera empezar que tengo que hacer?
             </span>
           </div>
-          <div class="answer color-silver fontSize-lg">
+          <div class="answer color-silver fontSize-xl"
+               [ngClass]="{active: isActive('4')}">
             Simplemente tenga listo sus opciones de compra más llamativas, 
             Agendamos el tour, pasamos por ustedes y empezamos el recorrido.
           </div>
         </div>
         <div class="question-container">
-          <div class="question">
+          <div class="question" (click)="select('5');">
             <i-chevron-down class="icon"></i-chevron-down>
             <span class="ml-2 color-secondary fontSize-xxl">
               Como funciona el dashboard de La Haus?
             </span>
           </div>
-          <div class="answer color-silver fontSize-lg">
+          <div class="answer color-silver fontSize-xl"
+               [ngClass]="{active: isActive('5')}">
             Es simple: El dashboard es un modulo en nuestra plataforma en la que 
             puedes tener acceso 24/7 y ver en tiempo real el estado actual de tu
             proceso: Ya el asesor hablo con los abogados? Ya se firmo la compra/venta?
@@ -88,13 +93,14 @@
           </div>
         </div>
         <div class="question-container">
-          <div class="question">
+          <div class="question" (click)="select('6');">
             <i-chevron-down class="icon"></i-chevron-down>
             <span class="ml-2 color-secondary fontSize-xxl">
               Tengo que firmar algo con ustedes?
             </span>
           </div>
-          <div class="answer color-silver fontSize-lg">
+          <div class="answer color-silver fontSize-xl"
+               [ngClass]="{active: isActive('6')}">
             No para nada, todos nuestros servicios son gratuitos y no tiene que firmar nada
             con nosotros. 
           </div>

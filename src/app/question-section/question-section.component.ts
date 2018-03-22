@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionSectionComponent implements OnInit {
 
+  private selected: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  select(id: string) {
+    this.selected = (this.selected === id ? null : id);
+  }
+
+  isActive(id: string) {
+    return this.selected === id;
   }
 
 }
