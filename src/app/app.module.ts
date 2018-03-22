@@ -9,6 +9,7 @@ import { PuvSectionComponent } from './puv-section/puv-section.component';
 import { ExtraExpensesCalculatorComponent } from './extra-expenses-calculator/extra-expenses-calculator.component';
 import { HowItWorkSectionComponent } from './how-it-work-section/how-it-work-section.component';
 import { CompareSectionComponent } from './compare-section/compare-section.component';
+import { ReviewSectionComponent } from './review-section/review-section.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { CompareSectionComponent } from './compare-section/compare-section.compo
     PuvSectionComponent,
     ExtraExpensesCalculatorComponent,
     HowItWorkSectionComponent,
-    CompareSectionComponent
+    CompareSectionComponent,
+    ReviewSectionComponent
   ],
   imports: [
     BrowserModule,

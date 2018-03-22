@@ -1,0 +1,27 @@
+@import '~theme/core/global';
+
+.app-review-section {
+  blockquote {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    line-height: 1.4;
+  }
+
+  blockquote:before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -10px;
+    position: absolute;
+    top: 62px;
+    color: map-get($color, darkSmoke);
+    font-size: 10em;
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+}
