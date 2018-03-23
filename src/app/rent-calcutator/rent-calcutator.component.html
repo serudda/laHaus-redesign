@@ -6,7 +6,7 @@
 
   <div class="ma-select-container mb-3" style="width: 100%;">
     <select class="ma-select ma-select--lg ma-select--block ma-select--input"
-            name="years">
+            [(ngModel)]="model.year" name="year">
       <option value="" disabled selected>
         Años pagando arriendo
       </option>
@@ -36,11 +36,10 @@
 
   <div class="ma-select-container mb-3" style="width: 100%;">
     <select class="ma-select ma-select--lg ma-select--block ma-select--input"
-            name="years">
+            [(ngModel)]="model.amount" name="amount">
       <option value="" disabled selected>
         Valor promedio del arriendo
       </option>
-      <option value="500000">$500.000</option>
       <option value="600000">$600.000</option>
       <option value="700000">$700.000</option>
       <option value="800000">$800.000</option>
@@ -60,15 +59,22 @@
     <i-chevron-down class="icon"></i-chevron-down>
   </div>
   
-  <div class="fontSize-xxxxl color-negative fontWeight-9 lineHeight-7">
-    $300'000.000
+  <div *ngIf="model.total !== 0">
+    <div class="fontSize-xxxxl color-negative fontWeight-9 lineHeight-7">
+      {{model.total | currency:'USD':true:'1.0'}}
+    </div>
+  
+    <p class="fontSize-xl color-negative m-0 mb-3">
+        {{model.message}}
+    </p>
   </div>
 
-  <p class="fontSize-xl color-negative m-0 mb-3">
-      Con esto ya hubieras comprado tu propia casa
-  </p>
+  <div *ngIf="model.total == 0">
+    <hr style="margin: 44px 0;">
+  </div>
   
-  <button class="ma-btn ma-btn--primary ma-btn--lg ma-btn--block">
+  <button class="ma-btn ma-btn--primary ma-btn--lg ma-btn--block"
+          (click)="calculate();">
     Comencemos a gestionar tu casa
   </button>
   
