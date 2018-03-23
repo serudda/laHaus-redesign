@@ -20,6 +20,9 @@ export class RentCalcutatorComponent implements OnInit {
   }
 
   calculate(): void {
+    if (this.model.year === '' || this.model.amount === '') {
+      return;
+    }
     const year = parseInt(this.model.year, 10);
     const amount = parseInt(this.model.amount, 10);
     const months = year * 12;

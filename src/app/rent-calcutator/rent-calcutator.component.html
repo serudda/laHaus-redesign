@@ -6,7 +6,9 @@
 
   <div class="ma-select-container mb-3" style="width: 100%;">
     <select class="ma-select ma-select--lg ma-select--block ma-select--input"
-            [(ngModel)]="model.year" name="year">
+            [(ngModel)]="model.year"
+            (change)="calculate();" 
+            name="year">
       <option value="" disabled selected>
         Años pagando arriendo
       </option>
@@ -36,7 +38,8 @@
 
   <div class="ma-select-container mb-3" style="width: 100%;">
     <select class="ma-select ma-select--lg ma-select--block ma-select--input"
-            [(ngModel)]="model.amount" name="amount">
+            [(ngModel)]="model.amount" 
+            (change)="calculate();" name="amount">
       <option value="" disabled selected>
         Valor promedio del arriendo
       </option>
@@ -73,8 +76,7 @@
     <hr style="margin: 44px 0;">
   </div>
   
-  <button class="ma-btn ma-btn--primary ma-btn--lg ma-btn--block"
-          (click)="calculate();">
+  <button class="ma-btn ma-btn--primary ma-btn--lg ma-btn--block">
     Comencemos a gestionar tu casa
   </button>
   
