@@ -34,17 +34,17 @@ export class RentCalcutatorComponent implements OnInit {
 
   assignMessage(total: number): string {
     if (total >= 1000000 && total < 40000000) {
-      return 'Con esto ya podrias separar un apartamento';
+      return 'Con esto ya hubieras separado un apto';
     } else if (total >= 40000000 && total < 70000000) {
       return 'Con esto ya tendrias para la cuota inicial de una casa';
     } else if (total >= 70000000 && total < 120000000) {
-      return 'Con esto ya podrias comprar tu propio apartamento';
+      return 'Con esto ya hubieras comprado tu propio apto';
     } else if (total >= 120000000 && total < 240000000) {
-      return 'Con esto ya podrias comprar tu propia casa';
+      return 'Con esto ya hubieras comprado tu propia casa';
     } else if (total >= 240000000 && total < 360000000) {
-      return 'Con esto ya podrias comprar 2 apartamentos';
+      return 'Con esto ya hubieras comprado 2 aptos';
     } else if (total >= 360000000 && total < 500000000) {
-      return 'Con esto ya podrias comprar 2 casas';
+      return 'Con esto ya hubieras comprado 2 casas';
     }
   }
 
